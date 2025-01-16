@@ -664,7 +664,7 @@
           </svg>
         </div>
       </section>
-      <div class="backdrop is-close" data-backdrop>
+      <div class="backdrop is-close" data-backdrop style="display: none;">
         <div class="modal">
           <button class="close-modal" type="button" data-close-modal>
             <svg
@@ -802,6 +802,16 @@
     <!-- <script src="js/main.script.js"></script> -->
     <!-- <script src="js/inputmask.min.js"></script> -->
     <!-- <script src="js/common.js"></script> -->
+
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+  const backdrop = document.querySelector('.backdrop');
+  if (backdrop) {
+    backdrop.style.display = '';
+  }
+});
+
+    </script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
