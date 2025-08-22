@@ -1,0 +1,55 @@
+/* CLIENTS */
+
+.clients{
+  background-image: url(../img/bg-clients.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+
+
+
+  &-list {
+
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      
+    }
+  }
+  
+  &-item {
+    padding: 25px;
+    
+    max-width: 440px;
+    border: $main-border;
+    // box-shadow: 0px 0px 10px 0px #0000000D inset;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: $border-radius;
+
+    display: block;
+    margin: 15px auto;
+  }
+  
+  &-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  &-location {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: $secondary-txt-cl;
+    // color: red;
+  }
+
+  &-story{
+    text-align: justify;
+  }
+
+}

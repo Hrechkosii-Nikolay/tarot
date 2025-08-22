@@ -2,7 +2,7 @@
 
 
 /* https://api.telegram.org/bot7680012686:AAGxHZxUCmNh3Pd6iWzYvVTRFk7DTkLDrO8/getUpdates,
-где, XXXXXXXXXXXXXXXXXXXXXXX - токен вашего бота, полученный ранее */
+где, XXXXXXXXXXXXXXXXXXXXXXX - токен вашого бота, отриманий раніше */
 
 
 $name = $_POST['user_name'];

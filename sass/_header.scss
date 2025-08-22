@@ -1,0 +1,163 @@
+/* Header */
+
+header {
+  padding-top: 5px;
+}
+
+nav {
+  position: relative;
+  
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+nav > a {
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    
+  }
+}
+
+
+.logo {
+  margin-right: 15px;
+  width: 100px;
+  aspect-ratio: 1 / 1;
+}
+
+.logo-link{
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    
+  }
+}
+
+
+.logo-txt {
+  font-family: "Cormorant", serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  color: $main-color;
+}
+
+.menu-list {
+display: none;
+max-width: 100%;
+
+@media screen and (max-width: 1139px) {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  background-color: #ffffffc0;
+
+  padding: 25px;
+  border-radius: $border-radius;
+  border: $main-border;
+  
+}
+
+@media screen and (min-width: 1140px) {
+  display: flex;
+  gap: 15px;
+  margin: 0 auto;
+  
+}
+
+
+}
+
+.menu-item {
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-weight: 300;
+
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width: 1139px) {
+    text-align: center;
+    font-size: 22px;
+    border-bottom: $main-border;
+    border-top: $main-border;
+    border-radius: $border-radius;
+    padding: 5px 10px;
+  
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+    
+  }
+
+  @media screen and (min-width: 1140px) {
+    font-size: 18px;
+  }
+}
+
+.menu-item > a {
+  
+
+  @media screen and (min-width: 1140px) {
+    border-bottom: $main-border;
+    border-top: $main-border;
+    border-radius: $border-radius;
+    padding: 8px 15px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+  }
+}
+
+
+.menu-item > a:hover,
+.menu-item > a:focus {
+  color: $main-color;
+  border-color: $main-color;
+}
+
+.menu-item:hover{
+  scale: 1.025;
+}
+
+.menu-btn {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  stroke: $main-txt-cl;
+
+  position: absolute;
+  top: 5px;
+  right: 15px;
+
+  @media screen and (min-width: 1139px) {
+    display: none;
+    
+  }
+  
+}
+
+
+.icon-plus{
+  display: none;
+}
+
+
+@media screen and (max-width: 1139px) {
+  
+  .menu-btn.is-open .icon-plus,
+  .menu-list.is-open{
+    display: block;
+  }
+}
+
+.menu-btn.is-open .icon-menu{
+  display: none;
+}

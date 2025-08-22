@@ -9,7 +9,7 @@
     content="Розрахунок матриці долі на календарний рік. Прогноз подій, можливості та кармічні завдання на рік. Замовте консультацію онлайн або в Києві!" />
   <meta name="keywords"
     content="Матриця долі на рік, матриця долі календарного року, прогноз подій на рік, матриця долі для бізнесу, матриця долі для кар'єри, матриця долі консультація Київ, розрахунок матриці долі онлайн, матриця долі для здоров'я, матриця долі для сім'ї, особиста матриця долі на рік">
-  <title>Матриця долі календарного року – прогноз подій та можливостей - tarolog.org.ua</title>
+  <title>Матриця долі календарного року – прогноз подій та можливостей - esoterichka.com.ua</title>
 
   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     as="style" onload="this.onload=null;this.rel='stylesheet'"
@@ -25,8 +25,9 @@
   <noscript>
     <link rel="stylesheet" href="./css/product.min.css">
   </noscript>
-  <link rel="icon" href="./img/logo_white-1.svg" />
-  <link rel="canonical" href="https://tarolog.org.ua/index.html" />
+  <link rel="icon" href="./img/logo_white.svg" />
+  <link rel="amphtml" href="https://esoterichka.com.ua/amp.html" />
+  <link rel="canonical" href="https://esoterichka.com.ua/index.html" />
 </head>
 
 <body>
@@ -153,35 +154,66 @@
                   @hrechkosii_anastasiia</a>
               </li>
               <li class="contacts-item icon-telegram">
-                <a class="contacts-link" target="_blanc" href="https://t.me/nastiia_magic">
+                <a class="contacts-link" target="_blanc" href="https://t.me/nastiia_esoterichka">
                   <svg class="contacts-icon" width="20" height="20">
                     <use href="./img/icons/svg-sprite.svg#telegram"></use>
                   </svg>
-                  @nastiia_magic</a>
+                  @nastiia_esoterichka</a>
               </li>
             </ul>
           </div>
           <form action="telegram.php" method="post" class="form" id="form">
-            <ul class="form-list">
+            <ul class="form-list form-list--top">
               <li class="form-item">
-                <input class="form-input" type="text" name="username" id="input-name" placeholder=" ">
+                <input
+                  class="form-input"
+                  type="text"
+                  name="user_name"
+                  id="input-name"
+                  placeholder=" "
+                />
                 <label class="form-label" for="input-name">Ім'я</label>
               </li>
               <li class="form-item">
-                <input class="form-input input-age" type="number" min="16" max="100" id="input-age" placeholder=" ">
+                <input
+                  class="form-input input-age"
+                  name="user_age"
+                  type="number"
+                  min="16"
+                  max="100"
+                  id="input-age"
+                  placeholder=" "
+                />
                 <label class="form-label" for="input-age">Вік</label>
               </li>
               <li class="form-item">
-                <input class="form-input" type="tel" id="input-tel" placeholder=" ">
+                <input
+                  class="form-input input-tel"
+                  type="tel"
+                  name="user_phone"
+                  id="input-tel"
+                  placeholder=" "
+                />
                 <label class="form-label" for="input-tel">Телефон</label>
               </li>
+            </ul>
+          
+            <ul class="form-list form-list--bottom">
               <li class="form-item">
-                <textarea class="form-input form-message" id="input-message" name="feedback" rows="5"
-                  placeholder=" "></textarea>
+                <textarea
+                  class="form-input form-message"
+                  id="input-message"
+                  name="user_message"
+                  rows="5"
+                  placeholder=" "
+                ></textarea>
                 <label class="form-label" for="input-message">Ваше запитання</label>
               </li>
             </ul>
-            <button class="form-btn base-btn" type="submit">Відправити</button>
+          
+            <button class="form-btn base-btn" type="submit">
+              Відправити
+            </button>
           </form>
         </div>
         <div class="map">
@@ -218,6 +250,7 @@
   <script defer type="module" src="./js/backToTop.js"></script>
   <script defer type="module" src="https://unpkg.com/imask"></script>
   <script defer type="module" src="./js/inputmask.js"></script>
+  <script defer type="module" src="./js/valid-tel.js"></script>
   <script defer type="module" src="./js/menu-btn.js"></script>
 </body>
 
