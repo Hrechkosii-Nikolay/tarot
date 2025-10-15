@@ -50,6 +50,9 @@ ul {
 }
 
 body {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   font-family: "FuturaPT-Light";
   font-weight: 200;
   letter-spacing: 1px;
